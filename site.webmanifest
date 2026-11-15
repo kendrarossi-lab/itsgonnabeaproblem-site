@@ -1,0 +1,21 @@
+{
+  "name": "It's Gonna Be a Problem",
+  "short_name": "IGBAP",
+  "description": "A relationships podcast about dating, boundaries, and standards, hosted by Kendra Jade.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0b0712",
+  "theme_color": "#0b0712",
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
