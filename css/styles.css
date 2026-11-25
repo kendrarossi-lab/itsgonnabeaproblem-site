@@ -150,11 +150,27 @@ a:hover {
 
 .logo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.55rem;
   line-height: 1;
   text-decoration: none;
   color: var(--text);
   padding: 0.35rem 0;
+}
+
+.logo-mark {
+  width: 2.55rem;
+  height: 2.55rem;
+  flex: 0 0 2.55rem;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
 }
 
 .logo:hover {
@@ -561,8 +577,14 @@ a.ep-card:hover {
 .badge-wrap img {
   width: 100%;
   background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 0 0 6px #fff, 0 0 0 10px var(--red), 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-radius: 0;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
 }
 
 .rules {
@@ -724,6 +746,14 @@ a.ep-card:hover {
   gap: 1.5rem 2rem;
 }
 
+.footer-brand .logo-mark {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 0 0 0.7rem;
+  border-radius: 50%;
+  background: #fff;
+}
+
 .footer-brand .logo-script {
   font-size: 1.3rem;
 }
@@ -831,7 +861,8 @@ a.ep-card:hover {
   .card-grid,
   .feature-grid,
   .contact-cards,
-  .footer-grid {
+  .footer-grid,
+  .photo-grid {
     grid-template-columns: 1fr;
   }
 
