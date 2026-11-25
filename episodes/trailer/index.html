@@ -7,8 +7,10 @@
   <meta name="description" content="It's Gonna Be a Problem is a relationships podcast about dating, boundaries, and standards, hosted by Kendra Jade. The short trailer is the invitation." />
   <link rel="canonical" href="https://itsgonnabeaproblem.com/episodes/trailer/" />
   <meta name="theme-color" content="#0b0712" />
+  <meta name="author" content="Kendra Jade" />
   <meta name="robots" content="index,follow" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="It's Gonna Be a Problem" />
   <meta property="og:title" content="Show Trailer: A Relationships Podcast About Boundaries | IGBAP" />
   <meta property="og:description" content="It's Gonna Be a Problem is a relationships podcast about dating, boundaries, and standards, hosted by Kendra Jade. The short trailer is the invitation." />
@@ -17,41 +19,130 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Square cover art for the relationships podcast It's Gonna Be a Problem, with the tagline Boundaries Are Hot." />
+  <meta property="og:image:type" content="image/jpeg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Show Trailer: A Relationships Podcast About Boundaries | IGBAP" />
   <meta name="twitter:description" content="It's Gonna Be a Problem is a relationships podcast about dating, boundaries, and standards, hosted by Kendra Jade. The short trailer is the invitation." />
   <meta name="twitter:image" content="https://itsgonnabeaproblem.com/images/og-image.jpg" />
   <meta name="twitter:site" content="@kendrasproblem" />
+  <meta name="twitter:image:alt" content="Square cover art for the relationships podcast It's Gonna Be a Problem, with the tagline Boundaries Are Hot." />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png" />
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.min.css" />
+  <link rel="preload" href="/fonts/yellowtail.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/anton.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/css/styles.min.css" as="style" />
   
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "PodcastEpisode",
-  "name": 'Show Trailer: A Relationships Podcast About Boundaries',
-  "description": "It's Gonna Be a Problem is a relationships podcast about dating, boundaries, and standards, hosted by Kendra Jade.",
-  "url": "https://itsgonnabeaproblem.com/episodes/trailer/",
-  "partOfSeason": {
-    "@type": "PodcastSeason",
-    "seasonNumber": 1,
-    "name": "From Easy to Clear"
-  },
-  "partOfSeries": {
-    "@type": "PodcastSeries",
-    "name": "It's Gonna Be a Problem",
-    "url": "https://itsgonnabeaproblem.com/"
-  },
-  "author": {
-    "@type": "Person",
-    "name": "Kendra Jade"
-  }
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://itsgonnabeaproblem.com/#website",
+      "url": "https://itsgonnabeaproblem.com/",
+      "name": "It's Gonna Be a Problem",
+      "alternateName": "IGBAP",
+      "description": "A relationships podcast about dating, boundaries, and standards, hosted by Kendra Jade.",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://itsgonnabeaproblem.com/#series"
+      }
+    },
+    {
+      "@type": "PodcastSeries",
+      "@id": "https://itsgonnabeaproblem.com/#series",
+      "name": "It's Gonna Be a Problem",
+      "alternateName": "IGBAP",
+      "description": "A relationships podcast about dating, boundaries, and standards, hosted by Kendra Jade.",
+      "url": "https://itsgonnabeaproblem.com/",
+      "inLanguage": "en",
+      "genre": [
+        "Relationships",
+        "Dating advice"
+      ],
+      "author": {
+        "@id": "https://itsgonnabeaproblem.com/#host"
+      },
+      "image": "https://itsgonnabeaproblem.com/images/igbap-cover-rain-check.jpg",
+      "isFamilyFriendly": false,
+      "sameAs": [
+        "https://www.instagram.com/itsgonnabeaproblempod/",
+        "https://www.tiktok.com/@itsgonnabeaproblempod",
+        "https://www.youtube.com/@itsgonnabeaproblempod",
+        "https://www.facebook.com/itsgonnabeaproblempod",
+        "https://www.threads.net/@itsgonnabeaproblempod",
+        "https://x.com/kendrasproblem"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://itsgonnabeaproblem.com/#host",
+      "name": "Kendra Jade",
+      "jobTitle": "Podcast host",
+      "url": "https://itsgonnabeaproblem.com/about/",
+      "image": "https://itsgonnabeaproblem.com/images/promo-turtleneck-mic-1600.jpg",
+      "worksFor": {
+        "@id": "https://itsgonnabeaproblem.com/#series"
+      },
+      "sameAs": [
+        "https://www.instagram.com/itsgonnabeaproblempod/",
+        "https://www.tiktok.com/@itsgonnabeaproblempod",
+        "https://www.youtube.com/@itsgonnabeaproblempod",
+        "https://www.facebook.com/itsgonnabeaproblempod",
+        "https://www.threads.net/@itsgonnabeaproblempod",
+        "https://x.com/kendrasproblem"
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "@id": "https://itsgonnabeaproblem.com/episodes/trailer/#episode",
+      "name": "Show Trailer: A Relationships Podcast About Boundaries",
+      "description": "It's Gonna Be a Problem is a relationships podcast about dating, boundaries, and standards, hosted by Kendra Jade.",
+      "url": "https://itsgonnabeaproblem.com/episodes/trailer/",
+      "partOfSeason": {
+        "@type": "PodcastSeason",
+        "seasonNumber": 1,
+        "name": "From Easy to Clear"
+      },
+      "partOfSeries": {
+        "@id": "https://itsgonnabeaproblem.com/#series"
+      },
+      "author": {
+        "@id": "https://itsgonnabeaproblem.com/#host"
+      },
+      "isFamilyFriendly": false
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://itsgonnabeaproblem.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Episodes",
+          "item": "https://itsgonnabeaproblem.com/episodes/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Show Trailer: A Relationships Podcast About Boundaries",
+          "item": "https://itsgonnabeaproblem.com/episodes/trailer/"
+        }
+      ]
+    }
+  ]
 }
-</script>
+  </script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -83,6 +174,13 @@
     <p class="kicker">Season 1, Trailer</p>
     <h1>Show Trailer: A Relationships Podcast About Boundaries</h1>
     <p class="lede">If you have been the chill one, the understanding one, the &quot;no, it&#x27;s fine, I&#x27;m not mad&quot; one, pull up.</p>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/episodes/">Episodes</a></li>
+        <li aria-current="page">Trailer</li>
+      </ol>
+    </nav>
     <div class="listen-row" role="group" aria-label="Listen links, coming December 1">
 <span class="listen-btn listen-btn--soon" aria-disabled="true">
   <span class="listen-btn__platform">Spotify</span>
@@ -96,15 +194,27 @@
   <span class="listen-btn__platform">Amazon Music</span>
   <span class="listen-btn__note">Coming Dec 1</span>
 </span>
+<span class="listen-btn listen-btn--soon" aria-disabled="true">
+  <span class="listen-btn__platform">YouTube</span>
+  <span class="listen-btn__note">Coming Dec 1</span>
+</span>
 </div>
-<p class="listen-note">Listen buttons are placeholders until the show goes live on Tuesday, December 1, 2026. Official Spotify, Apple Podcasts, and Amazon Music links will be added after publish, with Kendra's OK.</p>
+<p class="listen-note">Listen buttons are placeholders until the show goes live on Tuesday, December 1, 2026. Official Spotify, Apple Podcasts, Amazon Music, and YouTube links will be added after publish, with Kendra's OK.</p>
+    <div class="yt-embed" role="region" aria-label="YouTube episode embed, coming December 1">
+      <p class="yt-embed__kicker">Watch on YouTube</p>
+      <div class="yt-embed__frame">
+        <p class="yt-embed__title">Video embed coming Dec 1</p>
+        <p>The official episode video will be embedded here after the Tuesday, December 1, 2026 launch. Until then, follow the show at <a href="https://www.youtube.com/@itsgonnabeaproblempod" rel="noopener noreferrer">YouTube @itsgonnabeaproblempod</a>.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 <section class="section" style="padding-top:0;">
   <div class="wrap ep-article">
     <picture>
       <source type="image/webp" srcset="/images/igbap-cover-rain-check-800.webp" />
-      <img src="/images/igbap-cover-rain-check-800.jpg" width="800" height="800" alt="Episode card for Show Trailer: A Relationships Podcast About Boundaries, from It&#x27;s Gonna Be a Problem with Kendra Jade." />
+      <img src="/images/igbap-cover-rain-check-800.jpg" width="800" height="800" alt="Episode card for Show Trailer: A Relationships Podcast About Boundaries, from It&#x27;s Gonna Be a Problem with Kendra Jade."  loading="lazy" decoding="async" />
     </picture>
     
     <h2>About this trailer</h2>
@@ -112,6 +222,18 @@
     <p>If they cross the line, it's gonna be a problem.</p>
     <p>The trailer drops with Episodes 1 through 3 on Tuesday, December 1, 2026.</p>
     
+    <div class="transcript-block" id="transcript">
+      <h2>Episode transcript</h2>
+      <p>A full transcript will be published here after the audio is final. Until then, the notes above are the approved summary of this episode.</p>
+    </div>
+    <div class="related-eps">
+      <h2>Related episodes</h2>
+      <ul>
+        <li><a href="/episodes/dating-standards-why-im-done-being-easy/">Dating Standards: Why I'm Done Being Easy</a></li>
+        <li><a href="/episodes/red-flags-in-dating-i-used-to-call-cute/">Red Flags in Dating: The Ones I Used to Call Cute</a></li>
+        <li><a href="/episodes/situationships-are-a-problem/">Situationships Are a Problem: The "What Are We" Talk</a></li>
+      </ul>
+    </div>
     <p><a href="/episodes/">&larr; All episodes</a> &middot; <a href="/stories/">Send your story</a></p>
   </div>
 </section>
@@ -134,6 +256,7 @@
         <li><a href="/shop/">Shop</a></li>
         <li><a href="/stories/">Send a story</a></li>
         <li><a href="/contact/">Contact</a></li>
+        <li><a href="/faq/">FAQ</a></li>
       </ul>
     </div>
     <div>
@@ -142,17 +265,17 @@
         <li><a href="mailto:hello@itsgonnabeaproblem.com">hello@itsgonnabeaproblem.com</a></li>
         <li><a href="mailto:booking@itsgonnabeaproblem.com">booking@itsgonnabeaproblem.com</a></li>
         <li><a href="mailto:stories@itsgonnabeaproblem.com">stories@itsgonnabeaproblem.com</a></li>
-        <li><a href="https://www.instagram.com/itsgonnabeaproblempod/" rel="noopener">Instagram (@itsgonnabeaproblempod)</a></li>
-<li><a href="https://www.tiktok.com/@itsgonnabeaproblempod" rel="noopener">TikTok (@itsgonnabeaproblempod)</a></li>
-<li><a href="https://www.youtube.com/@itsgonnabeaproblempod" rel="noopener">YouTube (@itsgonnabeaproblempod)</a></li>
-<li><a href="https://www.facebook.com/itsgonnabeaproblempod" rel="noopener">Facebook (@itsgonnabeaproblempod)</a></li>
-<li><a href="https://www.threads.net/@itsgonnabeaproblempod" rel="noopener">Threads (@itsgonnabeaproblempod)</a></li>
-<li><a href="https://x.com/kendrasproblem" rel="noopener">X (@kendrasproblem)</a></li>
+        <li><a href="https://www.instagram.com/itsgonnabeaproblempod/" rel="noopener noreferrer">Instagram (@itsgonnabeaproblempod)</a></li>
+<li><a href="https://www.tiktok.com/@itsgonnabeaproblempod" rel="noopener noreferrer">TikTok (@itsgonnabeaproblempod)</a></li>
+<li><a href="https://www.youtube.com/@itsgonnabeaproblempod" rel="noopener noreferrer">YouTube (@itsgonnabeaproblempod)</a></li>
+<li><a href="https://www.facebook.com/itsgonnabeaproblempod" rel="noopener noreferrer">Facebook (@itsgonnabeaproblempod)</a></li>
+<li><a href="https://www.threads.net/@itsgonnabeaproblempod" rel="noopener noreferrer">Threads (@itsgonnabeaproblempod)</a></li>
+<li><a href="https://x.com/kendrasproblem" rel="noopener noreferrer">X (@kendrasproblem)</a></li>
       </ul>
     </div>
   </div>
   <div class="wrap legal">
-    <p>It's Gonna Be a Problem is an explicit relationships podcast. Swearing and adult politics are part of the conversation. Listener stories are protected: names are changed, always. A full privacy page will go up before any email list is turned on. This site has not been published yet.</p>
+    <p>It's Gonna Be a Problem is an explicit relationships podcast. Swearing and adult politics are part of the conversation. Listener stories are protected: names are changed, always. A full privacy page will go up before any email list is turned on.</p>
     <p>&copy; 2026 Kendra Jade. All rights reserved.</p>
   </div>
 </footer>
