@@ -7,8 +7,10 @@
   <meta name="description" content="Send a dating or relationship situation for It's Gonna Be a Problem. Names changed, always. Hosted by Kendra Jade." />
   <link rel="canonical" href="https://itsgonnabeaproblem.com/stories/" />
   <meta name="theme-color" content="#0b0712" />
+  <meta name="author" content="Kendra Jade" />
   <meta name="robots" content="index,follow" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="It's Gonna Be a Problem" />
   <meta property="og:title" content="Send Your Story | It's Gonna Be a Problem" />
   <meta property="og:description" content="Send a dating or relationship situation for It's Gonna Be a Problem. Names changed, always. Hosted by Kendra Jade." />
@@ -17,19 +19,99 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Square cover art for the relationships podcast It's Gonna Be a Problem, with the tagline Boundaries Are Hot." />
+  <meta property="og:image:type" content="image/jpeg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Send Your Story | It's Gonna Be a Problem" />
   <meta name="twitter:description" content="Send a dating or relationship situation for It's Gonna Be a Problem. Names changed, always. Hosted by Kendra Jade." />
   <meta name="twitter:image" content="https://itsgonnabeaproblem.com/images/og-image.jpg" />
   <meta name="twitter:site" content="@kendrasproblem" />
+  <meta name="twitter:image:alt" content="Square cover art for the relationships podcast It's Gonna Be a Problem, with the tagline Boundaries Are Hot." />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png" />
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.min.css" />
+  <link rel="preload" href="/fonts/yellowtail.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/anton.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/css/styles.min.css" as="style" />
   
   
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://itsgonnabeaproblem.com/#website",
+      "url": "https://itsgonnabeaproblem.com/",
+      "name": "It's Gonna Be a Problem",
+      "alternateName": "IGBAP",
+      "description": "A relationships podcast about dating, boundaries, and standards, hosted by Kendra Jade.",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://itsgonnabeaproblem.com/#series"
+      }
+    },
+    {
+      "@type": "PodcastSeries",
+      "@id": "https://itsgonnabeaproblem.com/#series",
+      "name": "It's Gonna Be a Problem",
+      "alternateName": "IGBAP",
+      "description": "A relationships podcast about dating, boundaries, and standards, hosted by Kendra Jade.",
+      "url": "https://itsgonnabeaproblem.com/",
+      "inLanguage": "en",
+      "genre": [
+        "Relationships",
+        "Dating advice"
+      ],
+      "author": {
+        "@id": "https://itsgonnabeaproblem.com/#host"
+      },
+      "image": "https://itsgonnabeaproblem.com/images/igbap-cover-rain-check.jpg",
+      "isFamilyFriendly": false,
+      "sameAs": [
+        "https://www.instagram.com/itsgonnabeaproblempod/",
+        "https://www.tiktok.com/@itsgonnabeaproblempod",
+        "https://www.youtube.com/@itsgonnabeaproblempod",
+        "https://www.facebook.com/itsgonnabeaproblempod",
+        "https://www.threads.net/@itsgonnabeaproblempod",
+        "https://x.com/kendrasproblem"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://itsgonnabeaproblem.com/stories/#webpage",
+      "url": "https://itsgonnabeaproblem.com/stories/",
+      "name": "Send Your Story | It's Gonna Be a Problem",
+      "isPartOf": {
+        "@id": "https://itsgonnabeaproblem.com/#website"
+      },
+      "about": {
+        "@id": "https://itsgonnabeaproblem.com/#series"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://itsgonnabeaproblem.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Send Your Story",
+          "item": "https://itsgonnabeaproblem.com/stories/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -60,6 +142,12 @@
   <div class="wrap">
     <p class="kicker">18 and older only</p>
     <h1>Send Your <span>Story</span></h1>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li aria-current="page">Send Your Story</li>
+      </ol>
+    </nav>
     <p class="lede">Got a dating or relationship situation that's about to be a problem? Send it in. Names are changed, always. Hosted by Kendra Jade.</p>
     <p><a class="btn" href="mailto:stories@itsgonnabeaproblem.com?subject=Story%20submission">Email stories@itsgonnabeaproblem.com</a></p>
   </div>
@@ -82,7 +170,7 @@
       </ol>
       <p>Please do not include full legal names, the other person's name, workplaces, exact cities, social handles, or photos of other people. Voice memos are welcome as an email attachment.</p>
     </div>
-    <p class="muted">If anything you want to write involves someone threatening you, controlling you, or hurting you, please don't wait on a podcast. Call or text the National Domestic Violence Hotline at 1-800-799-7233, text START to 88788, or visit <a href="https://www.thehotline.org/" rel="noopener">thehotline.org</a>. If you're in immediate danger, call 911.</p>
+    <p class="muted">If anything you want to write involves someone threatening you, controlling you, or hurting you, please don't wait on a podcast. Call or text the National Domestic Violence Hotline at 1-800-799-7233, text START to 88788, or visit <a href="https://www.thehotline.org/" rel="noopener noreferrer">thehotline.org</a>. If you're in immediate danger, call 911.</p>
   </div>
 </section>
 
@@ -104,6 +192,7 @@
         <li><a href="/shop/">Shop</a></li>
         <li><a href="/stories/">Send a story</a></li>
         <li><a href="/contact/">Contact</a></li>
+        <li><a href="/faq/">FAQ</a></li>
       </ul>
     </div>
     <div>
@@ -112,17 +201,17 @@
         <li><a href="mailto:hello@itsgonnabeaproblem.com">hello@itsgonnabeaproblem.com</a></li>
         <li><a href="mailto:booking@itsgonnabeaproblem.com">booking@itsgonnabeaproblem.com</a></li>
         <li><a href="mailto:stories@itsgonnabeaproblem.com">stories@itsgonnabeaproblem.com</a></li>
-        <li><a href="https://www.instagram.com/itsgonnabeaproblempod/" rel="noopener">Instagram (@itsgonnabeaproblempod)</a></li>
-<li><a href="https://www.tiktok.com/@itsgonnabeaproblempod" rel="noopener">TikTok (@itsgonnabeaproblempod)</a></li>
-<li><a href="https://www.youtube.com/@itsgonnabeaproblempod" rel="noopener">YouTube (@itsgonnabeaproblempod)</a></li>
-<li><a href="https://www.facebook.com/itsgonnabeaproblempod" rel="noopener">Facebook (@itsgonnabeaproblempod)</a></li>
-<li><a href="https://www.threads.net/@itsgonnabeaproblempod" rel="noopener">Threads (@itsgonnabeaproblempod)</a></li>
-<li><a href="https://x.com/kendrasproblem" rel="noopener">X (@kendrasproblem)</a></li>
+        <li><a href="https://www.instagram.com/itsgonnabeaproblempod/" rel="noopener noreferrer">Instagram (@itsgonnabeaproblempod)</a></li>
+<li><a href="https://www.tiktok.com/@itsgonnabeaproblempod" rel="noopener noreferrer">TikTok (@itsgonnabeaproblempod)</a></li>
+<li><a href="https://www.youtube.com/@itsgonnabeaproblempod" rel="noopener noreferrer">YouTube (@itsgonnabeaproblempod)</a></li>
+<li><a href="https://www.facebook.com/itsgonnabeaproblempod" rel="noopener noreferrer">Facebook (@itsgonnabeaproblempod)</a></li>
+<li><a href="https://www.threads.net/@itsgonnabeaproblempod" rel="noopener noreferrer">Threads (@itsgonnabeaproblempod)</a></li>
+<li><a href="https://x.com/kendrasproblem" rel="noopener noreferrer">X (@kendrasproblem)</a></li>
       </ul>
     </div>
   </div>
   <div class="wrap legal">
-    <p>It's Gonna Be a Problem is an explicit relationships podcast. Swearing and adult politics are part of the conversation. Listener stories are protected: names are changed, always. A full privacy page will go up before any email list is turned on. This site has not been published yet.</p>
+    <p>It's Gonna Be a Problem is an explicit relationships podcast. Swearing and adult politics are part of the conversation. Listener stories are protected: names are changed, always. A full privacy page will go up before any email list is turned on.</p>
     <p>&copy; 2026 Kendra Jade. All rights reserved.</p>
   </div>
 </footer>
