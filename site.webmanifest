@@ -3,9 +3,15 @@
   "short_name": "IGBAP",
   "description": "A relationships podcast about dating, boundaries, and standards, hosted by Kendra Jade.",
   "start_url": "/",
+  "id": "/",
+  "lang": "en",
   "display": "browser",
   "background_color": "#0b0712",
   "theme_color": "#0b0712",
+  "categories": [
+    "entertainment",
+    "lifestyle"
+  ],
   "icons": [
     {
       "src": "/images/icon-192.png",

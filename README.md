@@ -1,12 +1,10 @@
-# It's Gonna Be a Problem (itsgonnabeaproblem.com) - DRAFT site
+# It's Gonna Be a Problem (itsgonnabeaproblem.com)
 
-This is a draft static website for Kendra Jade's relationships podcast It's Gonna Be a Problem. It is not published.
+Static website for Kendra Jade's relationships podcast It's Gonna Be a Problem.
 
-Do not deploy, point DNS, submit sitemaps, pay for hosting, or announce the site until Kendra gives a direct OK.
+The public site is hosted on GitHub Pages from the `kendrarossi-lab/itsgonnabeaproblem-site` repo, custom domain `itsgonnabeaproblem.com`, serving from the `main` branch root. The CNAME file in this folder must stay set to `itsgonnabeaproblem.com`. A `.nojekyll` file is included so GitHub Pages will not run Jekyll.
 
-## What's in this folder
-
-Plain HTML and CSS. No build step. Open it with any static host, or locally with a simple server (paths are root-absolute, so opening files with a file:// URL will break CSS).
+Plain HTML and CSS. No build step. Paths are root-absolute, so opening files with a file:// URL will break CSS.
 
 Suggested local preview:
 
@@ -16,61 +14,36 @@ Then visit http://127.0.0.1:8080/
 
 ## Pages
 
-- `/` Home: cover, show pitch, launch date (Tuesday, December 1, 2026), placeholder listen buttons, Season 1 launch episodes, story CTA, socials
+- `/` Home: cover, show pitch, launch date (Tuesday, December 1, 2026), placeholder listen buttons, Season 1 launch episodes (trailer plus Episodes 1 to 3), story CTA, socials, FAQ teaser, launch-reminder mailto
 - `/episodes/` Season 1 launch archive (trailer plus Episodes 1 to 3)
 - `/episodes/trailer/`
 - `/episodes/dating-standards-why-im-done-being-easy/`
 - `/episodes/red-flags-in-dating-i-used-to-call-cute/`
 - `/episodes/situationships-are-a-problem/`
-- `/about/` Host and show, house rules, explicit rating
+- `/about/` Host and show, house rules, explicit rating, official promo photos
 - `/stories/` mailto stories@ plus what-to-send guide and privacy promise
-- `/contact/` hello@, booking@, stories@, socials
+- `/contact/` hello@, booking@, stories@, socials, launch-reminder mailto
 - `/shop/` Show merch coming soon (no products or prices yet)
-- `/listen/` Coming Dec 1 placeholders for Spotify, Apple Podcasts, and Amazon Music
+- `/listen/` Coming Dec 1 placeholders for Spotify, Apple Podcasts, Amazon Music, and YouTube, plus a YouTube embed placeholder and the official channel link
+- `/faq/` Launch, listen, stories, and show FAQ
 - `/404.html` Custom not-found page pointing back to episodes and listen
 
-SEO is included: unique titles and meta descriptions, Open Graph and Twitter card image, favicon, PodcastSeries and PodcastEpisode JSON-LD, sitemap.xml, robots.txt, canonical URLs for https://itsgonnabeaproblem.com, and a CNAME file containing itsgonnabeaproblem.com.
+SEO includes unique titles and meta descriptions, Open Graph and Twitter cards, favicon and web manifest, WebSite, PodcastSeries, Person, and PodcastEpisode JSON-LD, FAQPage schema, sitemap.xml, robots.txt, and canonical URLs for https://itsgonnabeaproblem.com.
 
-Listen buttons are not live links. The Spotify show is still unpublished.
+Listen buttons are not live links until the show publishes on Tuesday, December 1, 2026. The Spotify show (id 3JfiJQ799cpEyo8e22Sl8A) is still unpublished. Do not add fake play buttons.
 
-## Recommended host
+Styles: edit `css/styles.css`, then regenerate `css/styles.min.css` (the file pages actually load).
 
-GitHub Pages (free, custom domain supported). Kendra already has a GitHub account signed in with Google at kendrarossi@gmail.com. The GitHub username is not recorded in the current Accounts and Logins file, so the www CNAME target should be filled in as `<github-username>.github.io` once the username or organization is confirmed.
+## DNS and HTTPS notes
 
-Do not reuse a Cloudflare Pages account that already hosts a different project. If Cloudflare Pages is preferred later, create a new account for this show (for example with itsgonnabeaproblem@gmail.com or kendrarossi@gmail.com) after Kendra OKs it.
+Porkbun DNS for the apex (A and AAAA to GitHub Pages) and `www` CNAME to `kendrarossi-lab.github.io` is already in place. If browsers show a certificate error on https://www.itsgonnabeaproblem.com or https://itsgonnabeaproblem.com, GitHub Pages still needs a custom-domain certificate. That is fixed in the repo's GitHub Pages settings (custom domain `itsgonnabeaproblem.com`, then Enforce HTTPS). Do not change the Porkbun records for that step unless Pages says the `www` CNAME is wrong.
 
-## DNS records for GitHub Pages (hand these to Domains Bot after Kendra OKs hosting)
+Google Search Console for the domain is handled separately. Do not add verification tags in these files unless asked.
 
-Root (apex) `itsgonnabeaproblem.com`, type A, four records:
+## Photo rule for this repo
 
-- 185.199.108.153
-- 185.199.109.153
-- 185.199.110.153
-- 185.199.111.153
+Do not retouch approved promo photos. Do not remove tattoos or change clothing. Only resized web copies of the approved originals belong in `/images`. The Rain Check cover stays as is.
 
-Optional IPv6 AAAA records:
+## Publishing
 
-- 2606:50c0:8000::153
-- 2606:50c0:8001::153
-- 2606:50c0:8002::153
-- 2606:50c0:8003::153
-
-`www` CNAME: `<github-username>.github.io`
-
-Also set the custom domain to itsgonnabeaproblem.com in the GitHub repo Pages settings, and keep the CNAME file in this folder. A `.nojekyll` file is included so GitHub Pages will not run Jekyll.
-
-If Cloudflare Pages is used instead (new account only):
-
-- Root `@` CNAME (flattened by Cloudflare) to `<project>.pages.dev`
-- `www` CNAME to `<project>.pages.dev`
-
-## After Kendra OKs publish
-
-1. Create a public GitHub repo (for example `itsgonnabeaproblem` or `itsgonnabeaproblem.github.io`) under the existing account.
-2. Upload these files to the default branch.
-3. Enable GitHub Pages from the branch root.
-4. Ask Domains Bot to add the A and CNAME records above.
-5. Swap placeholder listen buttons for real Spotify, Apple Podcasts, and Amazon Music URLs once those are live.
-6. Do not spend money or email anyone from this folder.
-
-Copy on this site comes from the show SEO pack, Season 1 show notes, story submission setup, and show-level descriptions. Episode writing remains paused except for using existing approved draft copy already on the page.
+The box cannot `git push`. New or changed files are uploaded through the GitHub web UI to `main`, then Pages rebuilds. Nothing else should be submitted, emailed, or paid for from this folder without Kendra's own-words OK.
