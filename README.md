@@ -14,7 +14,7 @@ Then visit http://127.0.0.1:8080/
 
 ## Pages
 
-- `/` Home: cover, show pitch, launch date (Tuesday, December 1, 2026), placeholder listen buttons, Season 1 launch episodes (trailer plus Episodes 1 to 3), story CTA, socials, FAQ teaser, launch-reminder mailto
+- `/` Home: cover, official pinstripe title card, show pitch, launch date (Tuesday, December 1, 2026), placeholder listen buttons, Season 1 launch episodes (trailer plus Episodes 1 to 3), story CTA, socials, FAQ teaser, launch-reminder mailto
 - `/episodes/` Season 1 launch archive (trailer plus Episodes 1 to 3)
 - `/episodes/trailer/`
 - `/episodes/dating-standards-why-im-done-being-easy/`
@@ -42,7 +42,7 @@ Google Search Console for the domain is handled separately. Do not add verificat
 
 ## Photo rule for this repo
 
-Do not retouch approved promo photos. Do not remove tattoos or change clothing. Only resized web copies of the approved originals belong in `/images`. The Rain Check cover stays as is.
+The official image set, as of November 24, 2026, is the four files Kendra sent that day: three title cards (pinstripe seated, director chair reclining, cape standing) and the Queen Kendra logo. Use them as is. Do not retouch. Do not remove tattoos or change clothing. Only resized, cropped-for-format, and webp copies belong in `/images`. The Rain Check cover stays as the podcast cover art.
 
 ## Publishing
 
