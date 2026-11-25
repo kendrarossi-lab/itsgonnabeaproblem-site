@@ -7,8 +7,10 @@
   <meta name="description" content="Meet Kendra Jade, host of It's Gonna Be a Problem, a relationships podcast for women done shrinking. Dating, boundaries, and clear standards." />
   <link rel="canonical" href="https://itsgonnabeaproblem.com/about/" />
   <meta name="theme-color" content="#0b0712" />
+  <meta name="author" content="Kendra Jade" />
   <meta name="robots" content="index,follow" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="It's Gonna Be a Problem" />
   <meta property="og:title" content="About Kendra Jade and the Show | IGBAP" />
   <meta property="og:description" content="Meet Kendra Jade, host of It's Gonna Be a Problem, a relationships podcast for women done shrinking. Dating, boundaries, and clear standards." />
@@ -17,40 +19,105 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Square cover art for the relationships podcast It's Gonna Be a Problem, with the tagline Boundaries Are Hot." />
+  <meta property="og:image:type" content="image/jpeg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="About Kendra Jade and the Show | IGBAP" />
   <meta name="twitter:description" content="Meet Kendra Jade, host of It's Gonna Be a Problem, a relationships podcast for women done shrinking. Dating, boundaries, and clear standards." />
   <meta name="twitter:image" content="https://itsgonnabeaproblem.com/images/og-image.jpg" />
   <meta name="twitter:site" content="@kendrasproblem" />
+  <meta name="twitter:image:alt" content="Square cover art for the relationships podcast It's Gonna Be a Problem, with the tagline Boundaries Are Hot." />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png" />
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.min.css" />
+  <link rel="preload" href="/fonts/yellowtail.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/anton.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/css/styles.min.css" as="style" />
   
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Kendra Jade",
-  "jobTitle": "Podcast host",
-  "worksFor": {
-    "@type": "PodcastSeries",
-    "name": "It's Gonna Be a Problem",
-    "url": "https://itsgonnabeaproblem.com/"
-  },
-  "url": "https://itsgonnabeaproblem.com/about/",
-  "sameAs": [
-    "https://www.instagram.com/itsgonnabeaproblempod/",
-    "https://www.tiktok.com/@itsgonnabeaproblempod",
-    "https://www.youtube.com/@itsgonnabeaproblempod",
-    "https://www.facebook.com/itsgonnabeaproblempod",
-    "https://www.threads.net/@itsgonnabeaproblempod",
-    "https://x.com/kendrasproblem"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://itsgonnabeaproblem.com/#website",
+      "url": "https://itsgonnabeaproblem.com/",
+      "name": "It's Gonna Be a Problem",
+      "alternateName": "IGBAP",
+      "description": "A relationships podcast about dating, boundaries, and standards, hosted by Kendra Jade.",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://itsgonnabeaproblem.com/#series"
+      }
+    },
+    {
+      "@type": "PodcastSeries",
+      "@id": "https://itsgonnabeaproblem.com/#series",
+      "name": "It's Gonna Be a Problem",
+      "alternateName": "IGBAP",
+      "description": "A relationships podcast about dating, boundaries, and standards, hosted by Kendra Jade.",
+      "url": "https://itsgonnabeaproblem.com/",
+      "inLanguage": "en",
+      "genre": [
+        "Relationships",
+        "Dating advice"
+      ],
+      "author": {
+        "@id": "https://itsgonnabeaproblem.com/#host"
+      },
+      "image": "https://itsgonnabeaproblem.com/images/igbap-cover-rain-check.jpg",
+      "isFamilyFriendly": false,
+      "sameAs": [
+        "https://www.instagram.com/itsgonnabeaproblempod/",
+        "https://www.tiktok.com/@itsgonnabeaproblempod",
+        "https://www.youtube.com/@itsgonnabeaproblempod",
+        "https://www.facebook.com/itsgonnabeaproblempod",
+        "https://www.threads.net/@itsgonnabeaproblempod",
+        "https://x.com/kendrasproblem"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://itsgonnabeaproblem.com/#host",
+      "name": "Kendra Jade",
+      "jobTitle": "Podcast host",
+      "url": "https://itsgonnabeaproblem.com/about/",
+      "image": "https://itsgonnabeaproblem.com/images/promo-turtleneck-mic-1600.jpg",
+      "worksFor": {
+        "@id": "https://itsgonnabeaproblem.com/#series"
+      },
+      "sameAs": [
+        "https://www.instagram.com/itsgonnabeaproblempod/",
+        "https://www.tiktok.com/@itsgonnabeaproblempod",
+        "https://www.youtube.com/@itsgonnabeaproblempod",
+        "https://www.facebook.com/itsgonnabeaproblempod",
+        "https://www.threads.net/@itsgonnabeaproblempod",
+        "https://x.com/kendrasproblem"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://itsgonnabeaproblem.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://itsgonnabeaproblem.com/about/"
+        }
+      ]
+    }
   ]
 }
-</script>
+  </script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -81,6 +148,12 @@
   <div class="wrap">
     <p class="kicker">Hosted by Kendra Jade</p>
     <h1>About <span>the Show</span></h1>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li aria-current="page">About</li>
+      </ol>
+    </nav>
   </div>
 </section>
 <section class="section" style="padding-top:0;">
@@ -88,14 +161,14 @@
     <div class="photo-frame">
       <picture>
         <source type="image/webp"
-          srcset="/images/promo-seated-chair-800.webp 800w, /images/promo-seated-chair-1400.webp 1400w"
+          srcset="/images/promo-turtleneck-mic-800.webp 800w, /images/promo-turtleneck-mic-1600.webp 1600w"
           sizes="(max-width: 860px) 90vw, 440px" />
         <img
-          src="/images/promo-seated-chair-800.jpg"
-          srcset="/images/promo-seated-chair-800.jpg 800w, /images/promo-seated-chair-1400.jpg 1400w"
+          src="/images/promo-turtleneck-mic-800.jpg"
+          srcset="/images/promo-turtleneck-mic-800.jpg 800w, /images/promo-turtleneck-mic-1600.jpg 1600w"
           sizes="(max-width: 860px) 90vw, 440px"
-          width="800" height="999"
-          alt="Kendra Jade, host of It's Gonna Be a Problem, seated in a director's chair in a black-and-white pinstripe look with a rainbow-trimmed cape." />
+          width="641" height="800"
+          alt="Kendra Jade, host of It's Gonna Be a Problem, having a microphone clipped to a black turtleneck before recording."  loading="lazy" decoding="async" />
       </picture>
     </div>
     <div>
@@ -106,6 +179,26 @@
       <div class="rating-note">
         <p><strong>This show is explicit.</strong> Swearing and adult politics are part of the conversation, on purpose.</p>
       </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <h2 class="section-title">In the studio</h2>
+    <p class="section-intro">Another official photo from the same recording setup, used here exactly as shot.</p>
+    <div class="photo-frame">
+      <picture>
+        <source type="image/webp"
+          srcset="/images/promo-mic-leopard-800.webp 800w, /images/promo-mic-leopard-1600.webp 1600w"
+          sizes="(max-width: 860px) 90vw, 440px" />
+        <img
+          src="/images/promo-mic-leopard-800.jpg"
+          srcset="/images/promo-mic-leopard-800.jpg 800w, /images/promo-mic-leopard-1600.jpg 1600w"
+          sizes="(max-width: 860px) 90vw, 440px"
+          width="641" height="800"
+          alt="Kendra Jade, host of It's Gonna Be a Problem, having a microphone clipped on before recording."
+          loading="lazy" decoding="async" />
+      </picture>
     </div>
   </div>
 </section>
@@ -129,7 +222,7 @@
         <img
           src="/images/badge-queen-kendra-500.jpg"
           width="500" height="624"
-          alt="Circular badge illustration of Kendra Jade for It's Gonna Be a Problem, with a gold crown." />
+          alt="Circular badge illustration of Kendra Jade for It's Gonna Be a Problem, with a gold crown."  loading="lazy" decoding="async" />
       </picture>
     </div>
   </div>
@@ -138,12 +231,12 @@
   <div class="wrap">
     <h2 class="section-title">Follow Kendra and the show</h2>
     <p class="section-intro">Same handles everywhere except X.</p>
-    <div class="social-row"><a href="https://www.instagram.com/itsgonnabeaproblempod/" rel="noopener">Instagram <span class="muted">@itsgonnabeaproblempod</span></a>
-<a href="https://www.tiktok.com/@itsgonnabeaproblempod" rel="noopener">TikTok <span class="muted">@itsgonnabeaproblempod</span></a>
-<a href="https://www.youtube.com/@itsgonnabeaproblempod" rel="noopener">YouTube <span class="muted">@itsgonnabeaproblempod</span></a>
-<a href="https://www.facebook.com/itsgonnabeaproblempod" rel="noopener">Facebook <span class="muted">@itsgonnabeaproblempod</span></a>
-<a href="https://www.threads.net/@itsgonnabeaproblempod" rel="noopener">Threads <span class="muted">@itsgonnabeaproblempod</span></a>
-<a href="https://x.com/kendrasproblem" rel="noopener">X <span class="muted">@kendrasproblem</span></a></div>
+    <div class="social-row"><a href="https://www.instagram.com/itsgonnabeaproblempod/" rel="noopener noreferrer">Instagram <span class="muted">@itsgonnabeaproblempod</span></a>
+<a href="https://www.tiktok.com/@itsgonnabeaproblempod" rel="noopener noreferrer">TikTok <span class="muted">@itsgonnabeaproblempod</span></a>
+<a href="https://www.youtube.com/@itsgonnabeaproblempod" rel="noopener noreferrer">YouTube <span class="muted">@itsgonnabeaproblempod</span></a>
+<a href="https://www.facebook.com/itsgonnabeaproblempod" rel="noopener noreferrer">Facebook <span class="muted">@itsgonnabeaproblempod</span></a>
+<a href="https://www.threads.net/@itsgonnabeaproblempod" rel="noopener noreferrer">Threads <span class="muted">@itsgonnabeaproblempod</span></a>
+<a href="https://x.com/kendrasproblem" rel="noopener noreferrer">X <span class="muted">@kendrasproblem</span></a></div>
   </div>
 </section>
 
@@ -165,6 +258,7 @@
         <li><a href="/shop/">Shop</a></li>
         <li><a href="/stories/">Send a story</a></li>
         <li><a href="/contact/">Contact</a></li>
+        <li><a href="/faq/">FAQ</a></li>
       </ul>
     </div>
     <div>
@@ -173,17 +267,17 @@
         <li><a href="mailto:hello@itsgonnabeaproblem.com">hello@itsgonnabeaproblem.com</a></li>
         <li><a href="mailto:booking@itsgonnabeaproblem.com">booking@itsgonnabeaproblem.com</a></li>
         <li><a href="mailto:stories@itsgonnabeaproblem.com">stories@itsgonnabeaproblem.com</a></li>
-        <li><a href="https://www.instagram.com/itsgonnabeaproblempod/" rel="noopener">Instagram (@itsgonnabeaproblempod)</a></li>
-<li><a href="https://www.tiktok.com/@itsgonnabeaproblempod" rel="noopener">TikTok (@itsgonnabeaproblempod)</a></li>
-<li><a href="https://www.youtube.com/@itsgonnabeaproblempod" rel="noopener">YouTube (@itsgonnabeaproblempod)</a></li>
-<li><a href="https://www.facebook.com/itsgonnabeaproblempod" rel="noopener">Facebook (@itsgonnabeaproblempod)</a></li>
-<li><a href="https://www.threads.net/@itsgonnabeaproblempod" rel="noopener">Threads (@itsgonnabeaproblempod)</a></li>
-<li><a href="https://x.com/kendrasproblem" rel="noopener">X (@kendrasproblem)</a></li>
+        <li><a href="https://www.instagram.com/itsgonnabeaproblempod/" rel="noopener noreferrer">Instagram (@itsgonnabeaproblempod)</a></li>
+<li><a href="https://www.tiktok.com/@itsgonnabeaproblempod" rel="noopener noreferrer">TikTok (@itsgonnabeaproblempod)</a></li>
+<li><a href="https://www.youtube.com/@itsgonnabeaproblempod" rel="noopener noreferrer">YouTube (@itsgonnabeaproblempod)</a></li>
+<li><a href="https://www.facebook.com/itsgonnabeaproblempod" rel="noopener noreferrer">Facebook (@itsgonnabeaproblempod)</a></li>
+<li><a href="https://www.threads.net/@itsgonnabeaproblempod" rel="noopener noreferrer">Threads (@itsgonnabeaproblempod)</a></li>
+<li><a href="https://x.com/kendrasproblem" rel="noopener noreferrer">X (@kendrasproblem)</a></li>
       </ul>
     </div>
   </div>
   <div class="wrap legal">
-    <p>It's Gonna Be a Problem is an explicit relationships podcast. Swearing and adult politics are part of the conversation. Listener stories are protected: names are changed, always. A full privacy page will go up before any email list is turned on. This site has not been published yet.</p>
+    <p>It's Gonna Be a Problem is an explicit relationships podcast. Swearing and adult politics are part of the conversation. Listener stories are protected: names are changed, always. A full privacy page will go up before any email list is turned on.</p>
     <p>&copy; 2026 Kendra Jade. All rights reserved.</p>
   </div>
 </footer>
